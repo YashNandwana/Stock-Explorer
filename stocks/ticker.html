@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ ticker }}{% endblock %}
+{% block content %}
+        <h1>{{ meta.name }} ({{ ticker }})</h1>
+        <p>Description: {{ meta.description }}</p>
+        <p>Open: {{ prices.open }}</p>
+        <p>High: {{ prices.high }}</p>
+        <p>Low: {{ prices.low }}</p>
+        <p>Close: {{ prices.close }}</p>
+{% endblock %}
